@@ -1,0 +1,32 @@
+address = "0x16a3F3Ea430953812905fF72355122802b61b306"
+
+var mvp = eth.contract(abi).at(address)
+
+mvp.deposit.sendTransaction("0x14a808921F1C455a3De8a7B292b16CaC171fe7C2", {from:eth.accounts[0],gas: 300000, value:web3.toWei(1,"ether") })
+
+mvp.startDepositExit.sendTransaction((95,1), {from:eth.accounts[2],gas: 300000, value:web3.toWei(1,"ether") })
+
+mvp.finalizeDepositExit.sendTransaction({from:eth.accounts[2],gas: 300000})
+
+
+position(blockNum,txIndex,oIndex,depositNonce)
+(32,0, 0 ,20)
+
+
+ ErrInvalidTransaction("deposit, %s, has not finalized yet. Please wait at least %d blocks before resubmitting", msg.DepositNonce.String(), threshold.Int64()).Result(), true
+
+
+DEPOSITOR
+0x0d26186bc7355b8bc1bfc82127a6ec57451df86c
+AMOUNT
+1000000000000000000
+DEPOSITNONCE
+121
+ETHBLOCKNUM
+157
+
+160
+192
+
+128+20+1		
+amount uint256, committedFee uint256, createdAt uint256, ethBlockNum uint256, owner address, state uint8
